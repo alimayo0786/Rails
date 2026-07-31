@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dr. Johnson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Doctor Website">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%= stylesheet_link_tag "hover-style" %>
+    <%= stylesheet_link_tag "style" %>
+    <!-- CSS Files -->
+    <%= stylesheet_link_tag "doctor/bootstrap.css" %>
+    <%= stylesheet_link_tag "style" %>
+    <%= stylesheet_link_tag "animate.min" %>
+
+    <!-- JS Files -->
+    <%= javascript_include_tag "doctor/bootstrap.min.js", defer: true %>
+    <%= javascript_include_tag "main", defer: true %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
