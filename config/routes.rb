@@ -11,10 +11,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "index" => "students#doctor_website"
-  get "about" => "students#website_about"
-  get "service" => "students#website_services"
-  get "contact" => "students#website_contant"
-  get "login" => "students#website_login"
-  get "booking" => "students#website_booking"
+  get "index" => "doctor#doctor_website"
+  get "about" => "doctor#website_about"
+  get "service" => "doctor#website_services"
+  get "contact" => "doctor#website_contant"
+  get "login" => "doctor#website_login"
+  get "booking" => "doctor#website_booking"
 end

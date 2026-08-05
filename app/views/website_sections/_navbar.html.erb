@@ -1,23 +1,23 @@
 <!-- Header Start -->
-<header id="header" style="position: sticky; top: 0; z-index: 9999; width: 100%;">
+<header id="header">
     <div class="container">
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li class="<%= 'menu-active' if request.path == '/index.html' || request.path == '/' %>">
-                <a href="index.html">Home</a>
+              <li class="<%= 'menu-active' if request.path == '/index' || request.path == '/' %>">
+                <a href="index">Home</a>
               </li>
               <li class="<%= 'menu-active' if request.path.include?('about') %>">
-                <a href="about.html">About</a>
+                <a href="about">About</a>
               </li>
               <li class="<%= 'menu-active' if request.path.include?('service') %>">
-                <a href="service.html">Services</a>
+                <a href="service">Services</a>
               </li>
               <li class="<%= 'menu-active' if request.path.include?('booking') %>">
-                <a href="booking.html">Booking</a>
+                <a href="booking">Booking</a>
               </li>
               <li class="menu-has-children"><a href="#">pages</a>
                 <ul>
-                  <li><a href="login.html">Login</a></li>
+                  <li><a href="login">Login</a></li>
                   <li class="menu-has-children"><a href="#">Drop Down</a>
                     <ul>
                       <li><a href="#">Drop Down 1</a></li>
@@ -27,7 +27,7 @@
                 </ul>
               </li>
               <li class="<%= 'menu-active' if request.path.include?('contact') %>">
-                <a href="contact.html">Contact</a>
+                <a href="contact">Contact</a>
               </li>
             </ul>
         </nav>

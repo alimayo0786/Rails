@@ -1,4 +1,4 @@
-class StudentsController < ApplicationController
+class DoctorController < ApplicationController
   	def doctor_website  
   		@twitter = ''		
   		@facebook = ''	
